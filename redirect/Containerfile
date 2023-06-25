@@ -1,0 +1,4 @@
+FROM docker.io/library/eclipse-temurin:17-jre
+RUN mkdir -p /opt/app
+COPY build/install/redirect/lib/* /opt/app
+CMD ["java", "-cp", "/opt/app/*", "com.github.ram042.shortener.redirect.Main"]

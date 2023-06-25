@@ -1,0 +1,13 @@
+application {
+    mainClass = "com.github.ram042.shortener.redirect.Main"
+}
+
+run {
+    workingDir project.parent.projectDir
+}
+
+dependencies {
+    implementation 'io.javalin:javalin:5.6.2'
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
+    implementation 'software.amazon.awssdk:sqs:2.21.0'
+}
